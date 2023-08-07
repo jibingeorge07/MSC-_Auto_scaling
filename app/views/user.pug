@@ -1,0 +1,16 @@
+extends layout
+block content
+    main.py-5(style="background-image: url(http://alexandcammy.com/wp-content/uploads/2019/04/bettydrew-54.jpg);background-size:cover;background-position:center;background-repeat: no-repeat;margin-top: 20px;height:100%;")
+        form(action='/logout', method='POST')
+            button(type='submit',style='background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer') Logout
+        div(style='text-align:center')
+            h1 User Profile for: #{user.name}
+            p Address: #{user.address}
+            p Email Id: #{user.emailid}
+            p Contact: #{user.contact}
+            p Cake : #{user.cakeid}
+            p Flower: #{user.flowersid}
+            p Decorations: #{user.decorationsid}
+            p Location : #{user.venuesid}
+            div.container
+             button.centered(onclick="window.location.href='http://127.0.0.1:3000/user'") BACK

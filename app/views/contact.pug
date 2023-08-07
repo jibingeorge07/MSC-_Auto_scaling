@@ -1,0 +1,22 @@
+extends layout
+block content
+    main.py-5(style="background-image: url(https://images.squarespace-cdn.com/content/v1/5d0cee854cc5540001144979/1588772326933-BZV7BLMXJTEQVETE8QUL/Elizabeth+-+Save+the+Date.png);background-size:cover;background-position:center;background-repeat: no-repeat;margin-top: 20px;height:100%;")
+        div.m5(style="text-align:center;margin-top:2%")
+            h1 Contact Us
+            br
+            br
+            div
+                form(method="post" action="/contact_page")
+                    label(for="name") Name :
+                    input#name(style ="margin-left:2%",type="text" name="name" required)
+                    br
+                    br
+                    label(for="email") Email :
+                    input#email(style ="margin-left:2%",type="email" name="email" required)
+                    br
+                    br
+                    label(for="message") Message :
+                    textarea(style ="margin-left:0.5%",id="message", name="message")
+                    <br>
+                    <br>
+                    button(type="submit",style='background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer') Submit

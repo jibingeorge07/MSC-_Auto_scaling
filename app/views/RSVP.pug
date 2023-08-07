@@ -1,0 +1,38 @@
+extends layout
+block content
+    main.py-5
+        div.row
+          div.col-md-6.offset-md-3
+                form(method="post", action="/rsvp_submit",style='padding-left:40%')
+                    <br>
+                    label(for="name") Name:
+                    <br>
+                    input(type="text" id="name" name="name")
+                    <br><br>
+
+                    label(for="phone") Phone Number:
+                    <br>
+                    input(type="text" id="phone" name="phone")
+                    <br><br>
+
+                    label(for="email") Email:
+                    <br>
+                    input(type="text" id="email" name="email")
+                    <br><br>
+
+                    label(for="address") Address:
+                    <br>
+                    input(type="text" id="address" name="address")
+                    <br><br>
+
+                    label(for="count") No Of Guests:
+                    <br>
+                    input(type="number" id="count" name="count")
+                    <br><br>
+
+                    label(for="message") Message:
+                    <br>
+                    textarea(id="message" name="message")
+                    <br><br>
+                    button(type="submit",style='background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer') Submit
+
